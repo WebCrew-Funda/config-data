@@ -15,4 +15,9 @@ spring:
           uri: lb://payments-service
           predicates:
             - Path=/payments/**
+        - id: users-service
+          uri: lb://users-service
+          predicates:
+            - Path=/users/**
+        
        
